@@ -6,11 +6,12 @@ class MovieModel {
   bool isFavorite;
   String posterUrl;
 
-  MovieModel(
-      {@required this.movieId,
-      @required this.movieName,
-      @required this.posterUrl,
-      this.isFavorite = false});
+  MovieModel({
+    @required this.movieId,
+    @required this.movieName,
+    @required this.posterUrl,
+    this.isFavorite = false,
+  });
 
   void toggleFavorite() {
     isFavorite = !isFavorite;
